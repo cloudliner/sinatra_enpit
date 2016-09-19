@@ -13,3 +13,10 @@ post '/sendtext' do
   @title = params[:message]
   erb :index
 end
+
+get '/list' do
+  @title = "List"
+  @list = ['Apple', 'Orange', 'Grape']
+  erb :list
+end
+
