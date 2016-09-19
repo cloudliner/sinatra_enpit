@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  "Hello World!, AIIT"
+  erb :index
 end
 
 get '/hello/:name' do
