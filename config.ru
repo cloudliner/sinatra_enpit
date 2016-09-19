@@ -1,2 +1,2 @@
 require './hello'
-run Sinatora::Application
+run Sinatra::Application
