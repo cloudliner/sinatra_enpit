@@ -1,6 +1,7 @@
 require 'sinatra'
 
 get '/' do
+  @title = "AIIT"
   erb :index
 end
 
