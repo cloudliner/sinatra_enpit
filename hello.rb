@@ -20,3 +20,8 @@ get '/list' do
   erb :list
 end
 
+get '/images/:file.:ext' do |file, ext|
+  content_type ext
+  send_file "images/#{file}.#{ext}"
+end
+
